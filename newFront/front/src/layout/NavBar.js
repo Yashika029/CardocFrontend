@@ -6,7 +6,7 @@ export default function
     <div>
       
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src='https://s3-eu-west-1.amazonaws.com/tpd/logos/606f2a6f4e740b00013993e1/0x0.png' height={50} width={150}></img></a>
+  <a class="navbar-brand" href="/"><img src='https://s3-eu-west-1.amazonaws.com/tpd/logos/606f2a6f4e740b00013993e1/0x0.png' height={50} width={150} ></img></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,13 +33,7 @@ export default function
         </li>
       </ul>
     </div>
-
-
-
-      
-
-
-
+    
      <li class="nav-item">
         <a class="nav-link" href="/signIn">SignIn</a>
       </li>
@@ -53,8 +47,8 @@ export default function
             More
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-            <li><a class="dropdown-item" href="#">Services</a></li>
+            <li><a class="dropdown-item" href="/contactUs">Contact Us</a></li>
+            <li><a class="dropdown-item" href="/serviceList">Services</a></li>
           </ul>
         </li>
       </ul>
@@ -62,11 +56,6 @@ export default function
     </ul>
   </div>
 </nav>
-      
-  
-
-
-
-    </div>
+ </div>
   )
 }

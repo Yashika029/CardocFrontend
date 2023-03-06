@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { signUp } from '../Services/user_service';
+import { signUpEmp } from '../Services/user_service';
 import {toast} from 'react-toastify'
 
 import {
@@ -24,7 +24,8 @@ const [data, setData]= useState({
   Contact: '',
   Email: '',
   Password: '',
-  CarModel: ''
+  HireDate: '',
+  Designation: ''
 })
 
 useEffect(() => {
@@ -33,7 +34,7 @@ useEffect(() => {
 
 const handleRegister=(event)=>{
   event.preventDefault()
-  signUp(data).then((resp)=>{
+  signUpEmp(data).then((resp)=>{
     console.log(resp);
     console.log("Success log");
     toast.success("Registered Successfully !!")
@@ -46,9 +47,7 @@ const handleRegister=(event)=>{
 
 const handlerChange=(event, property)=>{
   setData({...data, [property]: event.target.value})
-
 }
-
 
 {
   return (
@@ -99,14 +98,6 @@ const handlerChange=(event, property)=>{
                 <MDBIcon fas icon="lock me-3" size='lg'/>
                 <MDBInput label='Designation' id='form3' type='text' onChange={(e)=> handlerChange(e, 'Designation')}/>
               </div>
-
-              <div className="d-flex flex-row align-items-center mb-4">
-                <MDBIcon fas icon="lock me-3" size='lg'/>
-                <MDBInput label='HireDate' id='form3' type='text'/>
-              </div>
-
-             
-
 
               <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
 

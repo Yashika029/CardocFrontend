@@ -104,7 +104,7 @@ const handlerChange=(event, property)=>{
 
 
             
-              <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
+              <MDBBtn className='mb-4' size='lg' >Register</MDBBtn>
 
             </MDBCol>
 
