@@ -19,12 +19,11 @@ from 'mdb-react-ui-kit';
 function App() {
 
   const [data, setData]= useState({
-    FirstName: '',
-    LastName: '',
-    Contact: '',
-    Email: '',
-    Password: '',
-    CarModel: ''
+    fName: '',
+    lName: '',
+    phoneNo: '',
+    email: '',
+    pwd: '',
   })
 
   // const [error, setError]=useState({
@@ -73,37 +72,29 @@ const handlerChange=(event, property)=>{
     
               <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label='FirstName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'FirstName')}/>
+                <MDBInput label='FirstName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'fName')}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label='LastName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'LastName')}/>
+                <MDBInput label='LastName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'lName')}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label='Contact' id='form1' type='tel' maxlength="10" className='w-100' onChange={(e)=> handlerChange(e, 'Contact')}/>
+                <MDBInput label='Contact' id='form1' type='text' maxlength="10" className='w-100' onChange={(e)=> handlerChange(e, 'phoneNo')}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4">
                 <MDBIcon fas icon="envelope me-3" size='lg'/>
-                <MDBInput label='Email' id='form2' type='email' onChange={(e)=> handlerChange(e, 'Email')}/>
+                <MDBInput label='Email' id='form2' type='email' onChange={(e)=> handlerChange(e, 'email')}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4">
                 <MDBIcon fas icon="lock me-3" size='lg'/>
-                <MDBInput label='Password' id='form3' type='password' onChange={(e)=> handlerChange(e, 'Password')}/>
+                <MDBInput label='Password' id='form3' type='password' onChange={(e)=> handlerChange(e, 'pwd')}/>
               </div>
 
-              
-              <div className="d-flex flex-row align-items-center mb-4">
-                <MDBIcon fas icon="lock me-3" size='lg'/>
-                <MDBInput label='CarModel' id='form3' type='text' onChange={(e)=> handlerChange(e, 'CarModel')}/>
-              </div>
-
-
-            
               <MDBBtn className='mb-4' size='lg' >Register</MDBBtn>
 
             </MDBCol>
