@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { signUpEmp } from '../Services/user_service';
-import {toast} from 'react-toastify'
+import {toast} from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 import {
   MDBBtn,
@@ -32,12 +33,16 @@ useEffect(() => {
   console.log(data);
 },[data])
 
+const navigate = useNavigate();
+
+
 const handleRegister=(event)=>{
   event.preventDefault()
   signUpEmp(data).then((resp)=>{
     console.log(resp);
     console.log("Success log");
     toast.success("Registered Successfully !!")
+    navigate('/signIn')
     
   }).catch((error)=>{
     console.log(error);
@@ -66,12 +71,12 @@ const handlerChange=(event, property)=>{
 
               <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label=' FirstName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'fName')}/>
+                <MDBInput label=' FirstName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'fname')}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4 ">
                 <MDBIcon fas icon="user me-3" size='lg'/>
-                <MDBInput label=' LastName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'lName')}/>
+                <MDBInput label=' LastName' id='form1' type='text' className='w-100' onChange={(e)=> handlerChange(e, 'lname')}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4 ">

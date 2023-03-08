@@ -14,9 +14,9 @@ import { ToastContainer } from 'react-toastify';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import ServiceList from './pages/ServiceList';
-
-
-
+import CarRegistration from './pages/CarRegistration';
+import ServiceListCust from './pages/ServiceListCust';
+import AddServices from './pages/AddServices';
 
 function App() {
   return (
@@ -31,8 +31,11 @@ function App() {
         <Route path='/signUpEmp' element={<SignUpEmp/>}></Route>
         <Route path='/aboutUs' element={<AboutUs/>}></Route>
         <Route path='/contactUs' element={<ContactUs/>}></Route>
-        <Route path='/serviceList' element={<ServiceList/>}></Route>
-       
+        <Route path='/serviceList' element={<ServiceList/>}></Route>     
+        <Route path='/car' element={<CarRegistration/>}></Route>
+        <Route path='/serviceCust' element={<ServiceListCust/>}></Route>
+        <Route path='/addServices' element={<AddServices/>}></Route>
+        
 
 
       </Routes>
