@@ -37,9 +37,12 @@ export default function
      <li class="nav-item">
         <a class="nav-link" href="/signIn">SignIn</a>
       </li>
-      <li class="nav-item">
+      {/* <li class="nav-item">
+        <a class="nav-link" href="/signIn2">SignIn2</a>
+      </li> */}
+      {/* <li class="nav-item">
         <a class="nav-link" href="/aboutus">About Us</a>
-      </li>
+      </li> */}
       <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
@@ -48,7 +51,7 @@ export default function
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" href="/contactUs">Contact Us</a></li>
-            <li><a class="dropdown-item" href="/serviceList">Services</a></li>
+            <li><a class="dropdown-item" href="/aboutus">About Us</a></li>
           </ul>
         </li>
       </ul>

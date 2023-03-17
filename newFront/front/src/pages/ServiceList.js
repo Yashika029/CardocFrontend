@@ -40,7 +40,7 @@ const ServiceList = () => {
           </tr>
         </thead>
         <tbody>
-          {services.map((service) => (
+          {/* {services.map((service) => (
             <tr key={service.id}>
               <td>{service.id}</td>
               <td>{service.name}</td>
@@ -49,7 +49,51 @@ const ServiceList = () => {
                 <button onClick={() => handleDelete(service.id)}>Delete</button>
               </td>
             </tr>
-          ))}
+          ))} */}
+           <tr>
+          <td>1</td>
+          <td>oil change replacement</td>
+          <td>1000</td>
+          <td>
+            <button onClick={()=>handleDelete}>Delete</button>
+          </td>
+          </tr>
+          <tr>
+          <td>2</td>
+          <td>Engine Coolant Top up</td>
+          <td>1200</td>
+          <td>
+            <button onClick={()=>handleDelete}>Delete</button>
+          </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Brake fluid top up</td>
+            <td>1500</td>
+            <td>
+            <button onClick={()=>handleDelete}>Delete</button>
+          </td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Engine belt change</td>
+            <td>1000</td>
+            <td>
+            <button onClick={()=>handleDelete}>Delete</button>
+          </td>
+          </tr>
+
+
+          <tr>
+            <td>5</td>
+            <td>Brake disc change</td>
+            <td>500</td>
+            <td>
+            <button onClick={()=>handleDelete}>Delete</button>
+          </td>
+          </tr>
+
         </tbody>
       </table>
       <Link to={'/addServices'}>

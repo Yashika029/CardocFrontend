@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './CarRegistration.css';
+import { Link } from 'react-router-dom';
 
 
 const CarRegistration= () => {
@@ -66,7 +67,7 @@ const CarRegistration= () => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="plateNo">License Plate Number:</label>
+        <label htmlFor="plateNo" maxlength="10">License Plate Number:</label>
         <input
           type="text"
           id="plateNo"
@@ -78,17 +79,19 @@ const CarRegistration= () => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="plateNo">Manufacturing year</label>
+        <label htmlFor="plateNo" maxlength="10">Manufacturing year</label>
         <input
           type="text"
-          id="plateNo"
-          name="plateNo"
+          id="mfgyear"
+          name="mfgyear"
           value={formData.mfgyear}
           onChange={handleChange}
           className="form-control"
         />
       </div>
+      <Link to={'/serviceCust'}>
       <button type="submit" className="btn btn-primary">Submit</button>
+      </Link>
     </form>
   );
 };

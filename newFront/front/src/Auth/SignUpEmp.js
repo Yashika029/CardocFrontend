@@ -26,7 +26,14 @@ const [data, setData]= useState({
   email: '',
   pwd: '',
   hireDate: '',
-  designation: ''
+  designation: '',
+  salary:0,
+  servicesList: [
+    {
+        name: "null",
+        price: 0
+    }
+]
 })
 
 useEffect(() => {

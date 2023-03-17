@@ -17,6 +17,8 @@ import ServiceList from './pages/ServiceList';
 import CarRegistration from './pages/CarRegistration';
 import ServiceListCust from './pages/ServiceListCust';
 import AddServices from './pages/AddServices';
+import Appointment from './Appt/Appointment';
+//import SignIn2 from './Auth/SignIn2';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path='/car' element={<CarRegistration/>}></Route>
         <Route path='/serviceCust' element={<ServiceListCust/>}></Route>
         <Route path='/addServices' element={<AddServices/>}></Route>
+        <Route path='/app' element={<Appointment/>}></Route>
+        {/* <Route path='/signIn' element={<SignIn2/>}></Route> */}
         
 
 

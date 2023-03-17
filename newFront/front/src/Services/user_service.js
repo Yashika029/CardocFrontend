@@ -10,6 +10,10 @@ export const signUpEmp=(data)=>{
 }
 
 export const signIn=(login)=>{
- return myAxios.post('',login).then((response)=>response.data)
+ return myAxios.post('/user/login',login).then((response)=>response.data)
 }
+
+// export const signIn2=(login)=>{
+//     return myAxios.post('/user/login',login).then((response)=>response.data)
+// }
 
